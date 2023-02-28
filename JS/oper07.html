@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // 1씩 증가 => 증감연산자
+    // 1씩 감소
+
+    let num1 = 1;
+    num1 = num1 + 1;
+    console.log ( num1 );
+
+    let num2 = 1;
+    num2++; //  ++num2 도 가능
+    console.log (num2);
+
+    let num10 = 1;
+    let num20 = 1;
+    let num11 = num10++;
+    let num21 = ++num20;
+
+    console.log( num10 + ' : ' + num11 ); // 2 : 1
+    console.log( num20 + ' : ' + num21 ); // 2 : 2
+
+//증감연산자 
+// ++x  : 먼저 피연산자의 값을 1 증가시킨 후에 해당 연산을 진행함
+// x++  : 먼저 해당 연산을 수행하고 나서, 피연산자의 값을 1 증가시킴
+
+
+  </script>
+</body>
+</html>
