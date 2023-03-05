@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>Document</title>
+  <script>
+    let output = '';
+      for (let i = 0; i < 4; i++){
+          for(let j = 0; j < i+1; j++){
+            output = output + ' ';
+          }
+          for(let k = 0; k < 2*(4-i)-1; k++){
+            output = output + '*';
+          }
+          output = output + '\n';
+
+      }
+      console.log(output);
+
+
+
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
