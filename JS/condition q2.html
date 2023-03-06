@@ -1,12 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <script>
+    let output = '';
+      for (let i = 0; i < 4; i++){
+          for(let j = 0; j < i+1; j++){
+            output = output + ' ';
+          }
+          for(let k = 0; k < 2*(4-i)-1; k++){
+            output = output + '*';
+          }
+          output = output + '\n';
+
+      }
+      console.log(output);
+
+
+
+
+  </script>
 </head>
 <body>
-  // ** 감소하는 별 만들기
+  
 </body>
 </html>
