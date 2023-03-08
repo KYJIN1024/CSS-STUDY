@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  
+  <title>Document</title>
+</head>
+<body>
+    <script>
+        let date1 = new Date ( 2023, 3-1, 8, 10, 10, 40) ;
+        console.log(date1.toLocaleDateString());
+
+        //월의 마지막.. 2월
+
+        let date2 = new Date( 2023, 3-1, 1-1); 
+        console.log(date2.toLocaleDateString()); // 해당날짜 전달의 마지막날을 얻을수 있음
+
+        // 2023년 12월 24일의 요일
+        const date3 = new Date( 2023, 12, 24 );
+        const days = ["일","월","화","수","목","금","토"];
+        const dayOfWeek = days[date3.getDay()];
+
+        console.log(dayOfWeek);
+
+
+
+    </script>
+
+</body>
+</html>

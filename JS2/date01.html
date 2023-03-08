@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <script>
+      let today = new Date();
+
+      console.log( today );  // 영문식으로 표기
+      console.log( today.toLocaleString() ); //한국식으로 표기
+
+      //년월일만 출력하기
+      let strToday = today.toLocaleString();
+      console.log( strToday.substring( 0, 11));
+
+      console.log( today.getFullYear() ); //년
+      console.log( today.getMonth() +1 ); //월
+      console.log( today.getDate() );     //일
+      console.log( today.getDay() );      // 주
+
+      // 시 분 초
+      console.log( today.getHours() );    
+      console.log( today.getMinutes() );
+      console.log( today.getSeconds() );
+      console.log( today.getTime() );
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  
+  <title>Document</title>
+</head>
+<body>
+    <script>
+      let arr1 = new Array(10, 20, 30, 40);
+      
+      //for
+      for( let i=0 ; i<arr1.length ; i++){
+          console.log( arr1[i] );
+      }
+
+      // 메서드
+      arr1.forEach( function (element) {
+          console.log('함수 호출:', element );
+      });
+
+      // arr1의 합계
+      let sum = 0;
+        arr1.forEach( function(e) {
+           sum += e;
+    });
+  
+      console.log( '합계 :', sum);
+      
+      
+    </script>
+
+
+
+</body>
+</html>

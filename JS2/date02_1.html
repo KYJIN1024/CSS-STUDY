@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  
+  <title>Document</title>
+  <script>
+    let date1 = new Date( 2023, 3-1, 3 );
+    let date2 = new Date( 2023, 3-1, 1 );
+
+
+    let interval1 = date1 - date2;
+    console.log( interval1);
+    let interval2 = date1.getTime() - date2.getTime();
+    console.log( interval2 );
+
+
+    //몇일..
+    let dateInterval = interval2 / (1000*60*60*24);
+    console.log(dateInterval);
+    console.log(date1.getDate() - date2.getDate() );
+    
+    //몇일전 , 몇일후 
+    let date = new Date();
+    date.setDate( date.getDate() + 7 );
+    console.log( date.toLocaleString() );
+  </script>
+
+
+
+
+
+</head>
+<body>
+    <script>
+        
+
+        // 2023년 12월 24일의 요일
+        const date3 = new Date( 2023, 12, 24 );
+        const days = ["일","월","화","수","목","금","토"];
+        const dayOfWeek = days[date3.getDay()];
+
+        console.log(dayOfWeek);
+
+
+
+    </script>
+
+</body>
+</html>

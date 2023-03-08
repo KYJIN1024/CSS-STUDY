@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <script>
+      //최대 최소값
+      console.log( Math.max( 52, 273, 57, 32, 300 ) );  //300
+      console.log( Math.min( 52, 273, 57, 32, 1 ) );  //01
+
+      //난수, 임의의 값 추출 ( 많이 쓰임 ex로또번호 추출)
+      // 0 <= x < 1 임의의 실수
+      console.log( Math.random() );
+      console.log( Math.random() );
+      console.log( Math.random() );
+
+      // 0 ~ 9 까지 중 임의의 정수 추출
+      // 0 * 10 <= 1 * 10 임의의실수
+      // 실수 -> 정수 (parseInt())
+      
+      console.log( parseInt(Math.random() * 10 ) );
+      console.log( parseInt(Math.random() * 10 ) );
+
+      //lotto : 1~45
+
+      console.log( parseInt(Math.random() * 45  ) + 1 );  // +1이 없을경우 0~44중 랜덤출력
+      
+
+
+  </script>
+</body>
+</html>

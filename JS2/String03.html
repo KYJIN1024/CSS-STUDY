@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <script>
+      let str1 = '사과,딸기,수박,참외';
+
+       //구분자 중심의 문자열 분리 => 배열취급 해야됨
+      let arr1 = str1.split(',');
+      console.log( arr1 );  // Array(4)
+
+      /**
+      for of  ? 
+      JavaScript에서 반복 가능한 객체를 순회하는 데 사용되는 루프
+      "for...of" 루프는 배열, 문자열, 맵(Map), 셋(Set)과 같은 반복 가능한(iterable) 객체에서 사용할 수 있음
+      이 루프를 사용하면 반복 가능한 객체의 각 요소에 대해 한 번에 하나씩 반복할 수 있습니다.     */
+      for ( const element of arr1){
+        console.log(element);   // 사과 딸기 수박 참외
+      }
+      
+
+  </script>
+
+
+</body>
+</html>
