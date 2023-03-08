@@ -2,32 +2,36 @@
 <html lang="ko">
 <head>
   <title>Document</title>
-  <style>
-    table{
-      border: 1px solid black;
-      width: 20px;
-    }
+    <style>
+      table{
+          border: 1px solid black;
+          text-align: center;
+          width: 200px;
+      }
+      td {
+          border: 1px solid black;
+          width: 100px;
+          
+      }
 
-    td{
-      width: 100px;
-    }
-  </style>
-
-  <script>
-  
-  document.write('<table>');
-        for (let row = 1; row<=6; row++){
-          document.write('<tr>');
-            for( let col=1; col<=5; col++ ){
-              document.write('<td>'+ (parseInt(Math.random() * 45 ) + 1) +'</td>')
-            }
-          document.write('</tr>');
-  document.write('</table>');
-   } 
-</script>
+    </style>
 </head>
 <body>
+    <script>
+      document.write('<table>');
+        for(let col=1; col<=5; col++ ){
+            document.write('<tr>')
+              for( let row=1; row<=6; row++){
+                document.write('<td>'+(parseInt(Math.random()*40)+1)+'</td>')
+              }  
+            document.write('</tr>')
+          }
+      document.write('</table>');
 
 
+    </script>
+
+
+  
 </body>
 </html>
