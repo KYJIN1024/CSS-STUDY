@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ 
+  <title>Document</title>
+  <script>
+   
+
+    const outer = function() {
+      //내부 함수
+      const inner1 = function(){
+          console.log ( 'inner1 호출' );
+      };
+
+      const inner2 = function() {
+          console.log( 'inner2 호출' );
+      }
+        
+    };
+    console.log( 'outer 호출' );   
+    
+
+  </script>
+</head>
+<body>
+  <script>
+
+   inner1();
+   inner2();
+
+  </script>
+</body>
+</html>

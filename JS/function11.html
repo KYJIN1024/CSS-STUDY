@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ 
+  <title>Document</title>
+  <script>
+    /** scope : 선언이 영향을 미치는 영역 선언은 쓰는 순서에
+    관계없이 먼저이루어짐 단 선언은 먼저이루어짐
+    미리선언하고 시작해야함
+
+    */
+   
+    let one = 100; //전역스코프 (static)
+    var two = 200;
+
+    const doFunc1 = function() {
+      let one = 300;
+      var two = 400; //지역스코프(local)함수내부에서 작동-쓰고버림)
+
+        console.log( 'doFunc1 호출' + one);    
+        console.log( 'doFunc1 호출' + two);    
+    };
+
+    console.log( 'one : ' + one);   
+    console.log( 'two : ' + two);   
+
+  </script>
+</head>
+<body>
+  <script>
+   doFunc1();
+  </script>
+</body>
+</html>

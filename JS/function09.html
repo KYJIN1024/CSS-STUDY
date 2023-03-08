@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ 
+  <title>Document</title>
+  <script>
+    //익명함수
+    const doFunc1 = function() {
+        console.log( 'doFunc1 호출' );
+    }
+    //화살표함수
+    const doFunc2 = () =>{
+      console.log( 'doFunc2 호출' );
+    };
+
+    //
+    const doFunc3= (one) =>{
+      console.log( 'doFunc3 호출:' + one );
+    };
+    //리턴함수로 표현가능
+    const doFunc4= (one, two) => {
+      return one + two;
+    };
+  //리턴을 생략하여 간략하게도 표기가능
+    const doFunc5= (one, two) => one + two;
+  
+  </script>
+</head>
+<body>
+  <script>
+    doFunc1();
+    doFunc2();
+    doFunc3();
+    console.log('결과 :' + doFunc4(10,20) );
+    console.log('결과 :' + doFunc5(10,20) );
+  </script>
+</body>
+</html>
