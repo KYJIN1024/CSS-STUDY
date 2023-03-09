@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Document</title>
+  <script>
+    function search() {
+  let keyword = document.getElementById("search-input").value;
+  window.location.href = "https://search.naver.com/search.naver?query=" + keyword;
+}
+  
+
+    // const goUrl = function(){
+    //   location.href = "https://search.naver.com/search.naver?query="}
+    
+  </script>
+
+</head>
+<body>
+
+  <input type="text" id="search-input">
+  <button id="search-btn" onclick="search()">검색</button>
+    <form>
+      검색사이트:
+      <select name="sitename">
+          <option value="naver" id="search-btn" >네이버</option>
+          <option value="daum" >다음</option>
+      </select>
+
+    </form> 
+
+  
+</body>
+</html>

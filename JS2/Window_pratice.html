@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Document</title>
+
+  <script>
+    const goUrl = function(url) {
+      let width = 600;
+      let height = 800;
+    
+
+      let left = screen.width/2 - width/2;
+      let top = screen.height/2 - height/2;
+
+      let option = `top=${top}, left=${left},
+                  width=${width},height=${height}`;
+
+        window.open( url, 'child', option );
+  
+      }
+
+  
+</script>
+</head>
+<body>
+  <a href="javascript:goUrl('http://m.daum.net')">다음 모바일</a>
+    
+
+</body>
+</html>

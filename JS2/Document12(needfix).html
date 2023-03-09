@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Document</title>
+    
+    <script>
+       const checkfrm = function(){
+
+            for( let i=0 ; i<document.frm1.cb.length ; i++){
+                if( document.frm1.cb[i].checked){
+
+                }
+            }
+        }                   
+    </script>
+</head>
+<body>
+    <form name="frm1" action="test1.html"></form>
+    <input type="button" value="선택" onclick="checkfrm()">
+    <br><br>
+    <form name="frm1" action="test1.html">
+        <input type="radio" name="cb" value="사과"> 사과 <br>
+        <input type="radio" name="cb" value="딸기" checked> 딸기 <br>
+        <input type="radio" name="cb" value="수박" > 수박 <br>
+        <input type="radio" name="cb" value="참외" > 참외 <br>
+        <input type="radio" name="cb" value="키위" > 키위 <br>
+    </form>
+</body>
+</html>

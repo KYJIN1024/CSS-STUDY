@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Document</title>
+</head>
+<body>   
+
+    <script>
+       const capitalize = function(data){
+          let words = data.split( ' ' );
+
+          let result = ' ';
+          for( let word of words ) {  
+          result += word.substring(0,1).toUpperCase() 
+            + word.substring(1) + ' ';
+            }   
+            return result;
+       };
+       const checkfrm = function() {
+          document.frm1.data2.value = capitalize(document.frm1.data1);
+       };
+    </script>
+
+    <form name="frm1" action="test1.html">
+        data1 : <input type="text" name="data1" /> <br /><br />
+                <input type="button" value="대문자로변경" onclick="checkfrm()" /><br /><br />
+        data2 : <input type="text" name="data2" readonly/> <br /><br />
+    </form>
+
+      
+
+
+
+
+</body>
+</html>

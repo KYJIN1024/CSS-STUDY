@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>  
+  <script>
+    const map = new Map();
+    console.log( map );
+
+    const map1 = new Map(
+     [ 
+      ['key1', 'value1'],
+      ['key2', 'value2'],
+      ['key3', 'value3'],
+      ['key4', 'value4']
+    ] 
+    );
+
+    console.log(map1);
+    console.log(map1.size); //4
+
+    const map2 = [
+        { key : 1, value : 10},
+        { key : 2, value : 20},
+        { key : 3, value : 30}
+    ];
+
+    console.log(map2);
+
+    console.log(map1[0]);
+    console.log(map1[1]);
+
+    for (let [key, value] of map1 ) {
+      // console.log( data );
+      console.log( key, value );  //key1 value1 key2 value2 key3 value3 key4 value4 
+    };
+  </script>
+
+
+</body>
+</html>

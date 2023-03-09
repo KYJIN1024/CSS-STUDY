@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+<script>
+    // 이벤트
+    // window.onload  를 쓸경우 자바스크립트를 먼저입력하여도 가능함
+    window.onload = function() {
+        console.log( typeof document.forms );
+        console.log( typeof document.length );
+
+        console.log( typeof document.forms[0] );
+        console.log( typeof document.forms[1] );
+
+        console.log( document.frm1);
+
+        console.log( document.forms[0].action );
+        console.log( document.frm1.action );
+  };
+
+
+
+ const checkfrm = function(){
+  <form name="frm1" action="test1.html"> </form>;
+  <form name="frm2" action="test2.html"> </form>;
+  <form name="frm3" action="test3.html"> </form>;
+}
+</script>
+<button onclick="checkfrm()">form 내용읽기</button>
+</body>
+</html>

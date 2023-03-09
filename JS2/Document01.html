@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>난 html문서</title>
+  <script> 
+    const changeTitle = function(title) {
+        document.title = title;
+    }
+  </script>
+</head>
+<body>
+  <script>
+      // document.write( 'Hello Script' );
+
+      document.bgColor ='darkgrey';
+
+      console.log( document.title);
+      document.title = '새로운 문서'
+      
+  </script>
+  
+  <button onclick="changeTitle( '제목 1' )">제목 1</button>
+  <button onclick="changeTitle( '제목 2' )">제목 2</button>
+
+</body>
+</html>
