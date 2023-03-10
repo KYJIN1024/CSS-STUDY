@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+    const goUrl = function() {
+        // console.log( 'goUrl 호출' ); ☆코드를 작성하면서 중간중간 콘솔을 입력하며 확인하기!
+        //console.log( document.frm.query.value );
+        //console.log( document.frm.sitename.options[document.frm.sitename.options.selectedIndex] );
+        //location.href = 'https://search.naver.com/search.naver?query=' + 'covid-19';
+        
+        let query = document.frm.query.value;
+        if( query.length <= 1 ){
+            alert(' 1자 이상의 검색어를 입력하셔야 합니다.' );
+        }else {
+            let sitename = document.frm.sitename.options
+            [document.frm.sitename.options.selectedIndex]
+
+            let url = ' ';
+            switch ( sitename ) {
+                case 'naver' :
+                  url =  'https://search.naver.com/search.naver?query=' + query;
+                  break;
+                case 'daum' :
+                  url =   'https://search.daum.net/search?q=' + query;
+                  break;
+                case 'google' :
+                  url =   'https://www.google.com/search?q=' + query;
+                  break;           
+            }
+         location.href= url;   
+        }
+    }
+  </script>
+</head>
+<body>
+  <form>
+  <select name="sitename">
+    <option value="naver">네이버</option>
+    <option value="daum">다음</option>
+    <option value="google">구글</option>
+  </select>
+  <input type="button" value="검색하기" onclick="goUrl()">
+  <br><br>
+  검색어 : <input type="text" name="query" placeholder="검색어">
+</form>
+
+  
+</body>
+</html>

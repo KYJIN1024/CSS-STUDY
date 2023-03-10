@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+    const viewContent = function(){
+      //querySelector() - id
+      //qeurySelectorAll()  - tag, class
+      const h1 = document.querySelector( '#h1')
+      console.log( h1.innerHTML );
+      console.log( h1.textContent );
+
+      const h3 = document.querySelector( '#h3')
+      console.log( h3.innerHTML );
+      console.log( h3.textContent ); //html태그를 제거하고 내용만 딱 보여줌
+    };
+
+    const deleteContent = function() {
+        const h1 = document.querySelector( '#h1');
+        // h1.innerHTML = 'Change Html'; //글자 변경가능
+        h1.innerHTML = ' '; //html태그를 넣을수도 있거나 태그삭제도 가능
+        
+    };
+  </script>
+</head>
+<body>
+    <input type="button" value="tag 보기"  onclick="viewContent()"/>
+    <input type="button" value="tag 수정"  onclick="modifyContent()"/>
+    <input type="button" value="tag 삭제"  onclick="deleteContent()"/>
+    <br /> <hr /> <br />
+    <h2 id="h1" class="c1">Header 1</h2>
+    <h2 id="h2">Header 2</h2>
+    <h2 id="h3" class="c1">
+        <i>Header 3</i>
+    </h2>
+</body>
+</html>

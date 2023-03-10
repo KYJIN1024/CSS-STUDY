@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #div {
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    window.onload = function() {
+                    document.getElementById( 'div' ).onclick = function(e) {
+                        //console.log( e); //클릭시 효과 발생
+
+            console.log( e.x );
+            console.log( e.y );
+
+            console.log( 'altkey : ' , e.altKey );
+            console.log( 'shiftkey : ' , e.shiftKey );
+            console.log( 'ctrlkey : ' , e.ctrlKey ); 
+            //클릭과 함께 해당키를 누르면 true값 표시됨
+            };
+      };
+  </script>
+  <div id='div'></div>
+  
+</body>
+</html>

@@ -12,15 +12,15 @@
 
   <script>
     // forms 배열 형식
-    console.log( typeof document.forms );
-    console.log( typeof document.length );
+    console.log( typeof document.forms ); //object
+    console.log( typeof document.length ); //undefined
 
-    console.log( typeof document.forms[0] );
-    console.log( typeof document.forms[1] );
+    console.log( typeof document.forms[0] ); //object
+    console.log( typeof document.forms[1] ); //object
 
-    console.log( document.frm1);
+    console.log( document.frm1); // <form name="frm1" action="test1.html"></form>
 
-    console.log( document.forms[0].action );
+    console.log( document.forms[0].action ); // http://127.0.0.1:5500
     console.log( document.frm1.action );
 
   </script>

@@ -19,7 +19,7 @@
         //    console.log( document.frm1.cb4.checked);
         //    console.log( document.frm1.cb4.value);
         // }  ;
-
+        const checkfrm = function(){
             if (document.frm1.cb1.checked){
                 console.log( document.frm1.cb1.value);
             }
@@ -31,7 +31,8 @@
             }
             if (document.frm1.cb4.checked){
                 console.log( document.frm1.cb4.value);
-            };
+            }
+        };
     </script>
 
 
@@ -41,7 +42,7 @@
         <input type="checkbox" name="cb3" value="수박" > 수박 <br>
         <input type="checkbox" name="cb4" value="참외" > 참외 <br>
 
-        <input type="button" value="form 내용 읽기" onclick="checkfrm()">
+        <input type="button" value="form 내용 읽기" onclick="checkfrm()" />
     </form>
 
 

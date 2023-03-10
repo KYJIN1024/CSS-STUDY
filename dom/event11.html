@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+  <script>
+    window.addEventListener( 'contextmenu', function(e) {
+      e.preventDefault();
+      alert( '오른쪽 버튼을 사용할 수 없습니다.');   //오른쪽마우스 금지
+    });
+
+    const checkfrm1 = function() {
+      // alert( 'checkfrm' );
+      if( document.frm.id.value == ''){
+          alert( '아이디가 없습니다.' );
+          return false;
+      }
+    }
+  </script>
+<body>
+  <form action="test.html" name="frm" method="get" onsubmit="return checkfrm1()">
+      아이디 <input type="text" name="id" id="id" />
+      <!-- submit : 전송기능이 기본이벤트 -->
+      <input type="submit" value="전송" />
+      <input type="button" value="전송" />
+  </form>
+</body>
+</html>

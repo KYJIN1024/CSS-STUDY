@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+
+  <style>
+    .t1{
+      border: 1px solid red;
+    }
+    .t2{
+      color: orange;
+    }
+  </style>
+
+  <script>
+     window.onload = function( ) {
+        document.getElementById( 'btn1' ).onclick = function( ){
+           const h1s = document.querySelector('#h2');
+           console.log( h1s.classList );
+           
+         
+        }
+        document.getElementById( 'btn2' ).onclick = function( ){
+          const h2 = document.querySelector('#h2');
+          h2.classList.add( 't2' );
+        };
+        document.getElementById( 'btn3' ).onclick = function( ){
+          const h2 = document.querySelector('#h3');
+          h2.classList.remove( 't3' );
+        };
+      } 
+  </script>
+</head>
+<body>
+    <input type="button" id="btn1" value="class 목록" />  
+    <input type="button" id="btn2" value="class 추가" />  
+    <input type="button" id="btn2" value="class 추가" />  
+    <br> <hr> <br>
+    <h1 id="h1" class="t1 t2">Hello Style</h1>
+    <h1 id="h2" class="t1">Hello Style</h1>
+    <h1 id="h3" class="t2">Hello Style</h1>
+
+</body>
+</html>

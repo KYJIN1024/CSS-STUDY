@@ -5,23 +5,25 @@
   
   <title>Document</title>
   <script>
-    const checkForm = function(){
-        console.log( document.frm1.data1);
-        console.log( document.frm1.data1.value);
-        console.log( document.frm1.data2.value);
+        const checkfrm = function(){
+            console.log( document.frm1.data1 );
+            console.log( document.frm1.data1.value );
+            console.log( document.frm1.data2.value );
 
-        console.log( document.frm1.data3.value);
-    }  ;
+            console.log( document.frm1.data3.value );
+
+            console.log( document.frm1.data4.value );
+         }  ;
     </script>
 </head>
 <body>
-    <form name="form1" action="test1.html">
-        data1 : <input type="text" name="date1" value="값1"/> <br /><br />
-        data2 : <input type="text" name="date2" value="값2"/> <br /><br />
-        password : <input type="password" name="date3" /> <br /><br />
-        <textarea name="data4" id="" cols="20" rows="5"></textarea>
+    <form name="frm1" action="test1.html">
+        data1 : <input type="text" name="data1" value="값1"/> <br /><br />
+        data2 : <input type="text" name="data2" value="값2"/> <br /><br />
+        password : <input type="password" name="data3" /> <br /><br />
+        <textarea name="data4" cols="20" rows="5"></textarea>
         <br><br>
-        <input type="button" value="form 내용 읽기" onclick="checkForm()">
+        <input type="button" value="form 내용 읽기" onclick="checkfrm()"  />
     </form>
 
 

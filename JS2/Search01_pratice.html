@@ -2,34 +2,34 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  
   <title>Document</title>
   <script>
     function search() {
-  let keyword = document.getElementById("search-input").value;
-  window.location.href = "https://search.naver.com/search.naver?query=" + keyword;
-}
-  
-
-    // const goUrl = function(){
-    //   location.href = "https://search.naver.com/search.naver?query="}
+      const selectElement = document.getElementById("search-engine");
+      const searchInput = document.getElementById("search-input").value;
     
-  </script>
+    // 선택된 검색 엔진에 따라 검색 URL 생성
+      let searchUrl;
+      if (selectElement.value === "naver") {
+        searchUrl = "https://search.naver.com/search.naver?query=" + searchInput;
+      } else if (selectElement.value === "daum") {
+        searchUrl = "https://search.daum.net/search?q=" + searchInput;
+      } else {
+        alert("검색 엔진을 선택해주세요.");
+        return;
+      }
 
+    // 검색 URL을 새 탭에서 열기
+       window.open(searchUrl, "_blank");
+  } 
+  </script>
 </head>
 <body>
-
-  <input type="text" id="search-input">
-  <button id="search-btn" onclick="search()">검색</button>
-    <form>
-      검색사이트:
-      <select name="sitename">
-          <option value="naver" id="search-btn" >네이버</option>
-          <option value="daum" >다음</option>
-      </select>
-
-    </form> 
-
-  
+    <select id="search-engine">
+      <option value="naver">네이버</option>
+      <option value="daum">다음</option>
+    </select>
+    <input type="text" id="search-input">
+    <button onclick="search()">검색</button>
 </body>
 </html>

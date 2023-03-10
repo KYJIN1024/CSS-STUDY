@@ -4,23 +4,14 @@
   <meta charset="UTF-8">
   <title>난 html문서</title>
   <script> 
-    const changeTitle = function(title) {
-        document.title = title;
+  //버튼 누르면 색상을 입력해주세요 창이 뜨고 지정한 색깔로 변경
+
+     const changeBgColor = function(){
+          document.bgColor = prompt('색상을 입력해주세요','blue');
     }
   </script>
 </head>
 <body>
-  <script>
-      // document.write( 'Hello Script' );
-      const changeBgColor = function(){
-          document.bgColor = prompt('색상을 입력해주세요',blue);
-    }
-
-
-
-  </script>
-  
-  <button onclick="changeBgColor">배경색상 변경</button>
-
+  <button onclick="changeBgColor()">배경색상 변경</button>
 </body>
 </html>

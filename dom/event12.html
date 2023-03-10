@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Document</title>
+
+<!-- 이벤트 버블링: 이벤트가 발생한 요소에서부터 부모요소로, 다시 그요소의 부모 요소로 이벤트가 전달되는것 -->
+
+  <style>
+    *{ 
+      border: 1px solid orange;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+  <script>
+      window.onload = function(){
+        document.getElementById( 'div1').onclick = function() {
+          console.log( 'div1 클릭')
+        }
+        document.getElementById( 'div2').onclick = function() {
+          console.log( 'div2 클릭')
+        }
+        document.getElementById( 'h1').onclick = function() {
+          console.log( 'h1 클릭')
+        }
+        document.getElementById( 'p1').onclick = function(e) {
+          console.log( 'p1 클릭')
+          if( e.stopPropagation){
+            e.stopPropagation(); // 이벤트 버블링 효과를 막아줄수 있음
+          }
+        };
+  };
+  </script>
+</head>
+<body>
+    <div id="div1">
+      <div id="div2">
+          <h1 id="h1">
+             <p id="p1">클릭 영역</p>
+          </h1>
+      </div>
+    </div>
+
+</body>
+</html>

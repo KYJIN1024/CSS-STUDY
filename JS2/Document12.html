@@ -8,19 +8,18 @@
     <script>
        const checkfrm = function(){
 
-            for( let i=0 ; i<document.frm1.cb.length ; i++){
+            for( let i = 0; i < document.frm1.cb.length; i++){
                 if( document.frm1.cb[i].checked){
-
+                    console.log( document.frm1.cb[i].value);
                 }
             }
-        }                   
+        };                   
     </script>
 </head>
 <body>
-    <form name="frm1" action="test1.html"></form>
-    <input type="button" value="선택" onclick="checkfrm()">
-    <br><br>
     <form name="frm1" action="test1.html">
+        <input type="button" value="선택" onclick="checkfrm()">
+        <br><br>
         <input type="radio" name="cb" value="사과"> 사과 <br>
         <input type="radio" name="cb" value="딸기" checked> 딸기 <br>
         <input type="radio" name="cb" value="수박" > 수박 <br>

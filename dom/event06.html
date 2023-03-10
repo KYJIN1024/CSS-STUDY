@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+
+<script>
+  window.onload = function() {
+   document.getElementById('data').onkeypress = function(e) {
+       console.log( 'code' , event.code);
+       console.log( 'key' , event.key); 
+    //텍스트창에 입력한 알파벳글자를 콘솔창에 표기해줌
+  };
+};
+</script>
+
+<body>
+  <input type="text" id="data" />
+
+</body>
+</html>

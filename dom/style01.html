@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+     window.onload = function( ) {
+        document.getElementById( 'btn1' ).onclick = function( ){
+          let h1 = document.getElementById( 'h1' );
+          h1.style.border = '1px solid red';
+          h1.style.color = 'orange';
+        }
+        document.getElementById( 'btn2' ).onclick = function( ){
+          let h1 = document.getElementById( 'h1' );
+          h1.style.border = 'none';
+          h1.style.color = 'black';
+        }
+      }
+  </script>
+</head>
+<body>
+    <input type="button" id="btn1" value="style 추가" />  
+    <input type="button" id="btn2" value="style 삭제" />  
+    <br> <hr> <br>
+    <h1 id="h1">Hello Style</h1>
+
+</body>
+</html>

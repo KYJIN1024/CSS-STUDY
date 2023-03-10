@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+
+<style>
+  #div {
+      width: 200px;
+      height: 200px;
+      border: 1px solid black;
+  }
+
+</style>
+
+<script>
+ window.addEventListener('load',function() { 
+    const div = document.getElementById( 'div' );
+    div.addEventListener('click', function(){
+      console.log( 'click' );  
+  //div영역에 클릭시 콘솔로그창에 click 문자 출력
+    } );
+ });
+</script>
+
+<body>
+  <div id="div"></div>
+
+</body>
+</html>

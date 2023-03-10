@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+    <style>
+        #div {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+        }
+
+    </style>
+
+    <script>
+            //mouse 이벤트
+            window.onload = function() {
+                document.getElementById( 'div' ).onclick = function() {
+                    console.log( 'click' ); //클릭시 효과 발생
+                }
+
+                document.getElementById( 'div' ).onmouseover = function() {
+                    console.log( 'mouseover' );  // 정해진영역안에 마우스를 가져다대면 효과 발생
+                }
+
+                document.getElementById( 'div' ).onmouseout = function() {
+                    console.log( 'mouseout' ); //정해진 영역안에 마우스커서가 나가면 효과 발생
+                }
+
+            }
+        
+
+    </script>
+</head>
+<body>
+  <div id="div"></div>
+</body>
+</html>

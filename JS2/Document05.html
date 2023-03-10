@@ -19,16 +19,27 @@
 
         console.log( document.forms[0].action );
         console.log( document.frm1.action );
-  };
+     };
 
+    const checkfrm = function() {
+        console.log( typeof document.forms );
+        console.log( typeof document.length );
 
+        console.log( typeof document.forms[0] );
+        console.log( typeof document.forms[1] );
 
- const checkfrm = function(){
-  <form name="frm1" action="test1.html"> </form>;
-  <form name="frm2" action="test2.html"> </form>;
-  <form name="frm3" action="test3.html"> </form>;
-}
+        console.log( document.frm1);
+
+        console.log( document.forms[0].action );
+        console.log( document.frm1.action );
+     };
 </script>
-<button onclick="checkfrm()">form 내용읽기</button>
+
+    <form name="frm1" action="test1.html"></form>
+    <form name="frm2" action="test2.html"></form>
+    <form name="frm3" action="test3.html"></form>
+
+
+    <button onclick="checkfrm()">form 내용읽기</button>
 </body>
 </html>

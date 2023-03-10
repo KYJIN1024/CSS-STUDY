@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+  <script>
+    window.onload = function() {
+        document.getElementById( 'btn' ).onclick = function() {
+            console.log( 'click' );
+            document.getElementById( 'btn' ).onclick = null;
+        }
+
+  // 버튼을 클릭하면 콘솔창에 click텍스트출력 하지만 한번클릭수 null로 인해 더이상 출력되지않음
+    }
+  </script>
+<body>
+  
+  <input type="button" id="btn" value="클릭" />
+
+</body>
+</html>

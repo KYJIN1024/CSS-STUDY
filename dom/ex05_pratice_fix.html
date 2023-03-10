@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+
+  
+  
+
+  <script>
+  function printMultiplicationTable() {
+  // 시작단수와 끝단수를 가져옴
+  const startNum = document.getElementById("startNum").value;
+  const endNum = document.getElementById("endNum").value;
+  
+  // 구구단 출력할 div 요소를 가져옴
+  const multiplicationTable = document.getElementById("multiplicationTable");
+  
+  // 구구단 출력
+  
+  let table = '<table>';
+  for (let i = startNum; i <= endNum; i++) {
+  table += '<tr>';
+    for (let j = 1; j <= 9; j++) {
+      table +='<td>'+ i + " x " + j + " = " + (i * j) + '</td> ' ;
+    }
+    table += '</tr>'
+    table += '</table>'
+  }
+  
+  // 구구단을 div 요소에 출력
+  multiplicationTable.innerHTML = table;
+}
+
+  </script>
+</head>
+<body>
+  <input type="number" id="startNum" placeholder="시작 단수">
+<input type="number" id="endNum" placeholder="끝 단수"> <br><br>
+<button onclick="printMultiplicationTable()">구구단 출력</button>
+<div id="multiplicationTable"></div>
+
+
+
+</body>
+</html>

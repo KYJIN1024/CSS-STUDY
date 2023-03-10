@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Button Click Event</title>
+  </head>
+  <body>
+    <button id="button1">버튼1</button>
+    <button id="button2">버튼2</button>
+    <button id="button3">버튼3</button>
+    <button id="button4">버튼4</button>
+    <button id="button5">버튼5</button>
+    <br>
+    <input type="text" id="output">
+    <script>
+      const button1 = document.getElementById("button1");
+      const button2 = document.getElementById("button2");
+      const button3 = document.getElementById("button3");
+      const button4 = document.getElementById("button4");
+      const button5 = document.getElementById("button5");
+      const output = document.getElementById("output");
+
+      button1.addEventListener("click", function() {
+        output.value = "버튼 1클릭";
+      });
+      button2.addEventListener("click", function() {
+        output.value = "버튼 2클릭";
+      });
+      button3.addEventListener("click", function() {
+        output.value = "버튼 3클릭";
+      });
+      button4.addEventListener("click", function() {
+        output.value = "버튼 4클릭";
+      });
+      button5.addEventListener("click", function() {
+        output.value = "버튼 5클릭";
+      });
+    </script>
+  </body>
+</html>
