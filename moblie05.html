@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+    <style>
+        .title{
+          font-size: 25px;
+          height: 50px;
+          background-color: #4473C2;
+          color: white;
+          text-align: center;
+          margin-top: 5px;
+          padding-top: 20px;
+          
+        }
+
+        .homeBtn{
+          position: absolute;
+          left: 30px;  
+          top:30px;
+        }
+
+        .menuBtn{
+          position: absolute;
+          right: 30px;
+          top: 30px;
+          width: 40px;
+          height: 40px;
+        }
+
+        .contents{ 
+          font-size: 20px;
+          margin:5px;
+          text-align: center;
+          font-weight: bold;
+        }
+
+        .contents_title{
+          font-size: 20px;
+          font-weight: bold;
+          padding: 10px;
+
+        }
+
+        .contents_square{
+          width: 90%;
+          height: 100px;
+          border: 1px dashed blue ;
+          padding: 10px;
+        }
+
+        .contents_bottom{
+          border: 1px solid black;
+          width: 90%;
+          height: 60px;
+          border-radius: 20px;
+          background-color: #FFF2CD;
+          padding: 10px;
+        }
+
+        .homeBtn:hover{
+          background: white;
+        }
+        .menuBtn:hover{
+          background: white;
+        }
+
+    </style>
+
+    <script>
+      function goToHomepage() { location.href = "moblie01.html"; 
+      }
+      function goToMenu() {location.href = "moblie02.html"; 
+      }
+      function search() {
+      const selectElement = document.getElementById("search-engine");
+      const searchInput = document.getElementById("search-input").value;
+    
+    // 선택된 검색 엔진에 따라 검색 URL 생성
+      let searchUrl;
+      if (selectElement.value === "naver") {
+        searchUrl = "https://search.naver.com/search.naver?query=" + searchInput;
+      } else if (selectElement.value === "daum") {
+        searchUrl = "https://search.daum.net/search?q=" + searchInput;
+      } else {
+        alert("검색 엔진을 선택해주세요.");
+        return;
+      }
+
+    // 검색 URL을 새 탭에서 열기
+       window.open(searchUrl, "_blank");
+  } 
+
+
+    </script>
+</head>
+<body>
+  <div>
+    <div class="title">
+      <img class="homeBtn" src="./images/house.png" width="40px" height="40px"
+      onclick="goToHomepage()" style="cursor:pointer"> PLAN
+      <img class="menuBtn" src="./images/menu.png" onclick="goToMenu()" style="cursor:pointer" > 
+    </div>
+  </div>  
+  <br><br>
+  <div class="contents">
+    공부 계획 및 포부
+  </div>
+  <br>
+  <div>
+    <div class="contents_title"> NOW LEARNING </div>
+    <div class="contents_square">  
+      <img src="./images/Html.png" width="80px"> 
+      <img src="./images/css.png" width="80px"> 
+      <img src="./images/image.png" width="80px"> 
+      <img src="./images/java.png" width="80px"> 
+    </div>
+  </div>
+  <br>
+  <div>
+    <div class="contents_title"> NEED LEARNING </div>
+    <div class="contents_square"> 
+        <img src="./images/nodejs.png" width="80px">
+        <img src="./images/spring.png" width="80px">
+        <img src="./images/dj.jpg" width="80px">
+        <img src="./images/python.png" width="80px">
+    </div>
+    <br>
+    <div>
+      무슨 프로그램인지 모르겠다면? <br>
+      <select id="search-engine">
+        <option value="naver">네이버</option>
+        <option value="daum">다음</option>
+      </select>
+      <input type="text" id="search-input" placeholder="ex)HTML">
+      <button onclick="search()">검색</button>
+    </div>
+    <br><br>
+    <div class="contents_title"> 포부 </div>
+    <div class="contents_bottom">
+      7월말까지 길고도 짧은 시간이 남았다. 수업에 열심히 참여하고 열심히 코딩해서 과정이 끝날때
+      후회없도록 열심히 코딩하자!
+    </div>
+  </div>
+</body>
+ 

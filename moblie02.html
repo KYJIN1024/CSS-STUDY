@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+    <style>
+    .title{
+      font-size: 25px;
+      height: 50px;
+      background-color: #4473C2;
+      color: white;
+      text-align: center;
+      margin-top: 5px;
+      padding-top: 20px;
+    }
+
+    .homeBtn{
+      position: absolute;
+      left: 30px;  
+      top:30px;
+    }
+
+    .menuBtn{
+      position: absolute;
+      right: 30px;
+      top: 30px;
+      width: 40px;
+      height: 40px;
+    }
+
+    .contents{ 
+      font-size: 24px;
+      margin:5px;
+    }
+
+    .contents_1{
+      border: 1px solid ;
+      border-radius: 8px;
+      width: 70%;
+      height: 50px;
+      margin: 50px;
+      font-size: 30px;
+      font-weight: bold;
+      background-color: #F8CBAC;
+    }
+    .contents_2{
+      border: 1px solid ;
+      border-radius: 8px;
+      width: 70%;
+      height: 50px;
+      margin: 50px;
+      font-size: 30px;
+      font-weight: bold;
+      background-color: #C5E0B5;
+    }
+    .contents_3{
+      border: 1px solid ;
+      border-radius: 8px;
+      width: 70%;
+      height: 50px;
+      margin: 50px;
+      font-size: 30px;
+      font-weight: bold;
+      background-color: #F2E5C0;
+    }
+    .homeBtn:hover{
+          background: white;
+        }
+    .menuBtn:hover{
+          background: white;
+        }
+    </style>
+
+    <script>
+
+            function goToHomepage() { location.href = "moblie01.html"; 
+            }
+            function goToMenu() {location.href = "moblie02.html"; 
+            }
+            function goToMenu1() {location.href = "moblie03.html"; 
+            }
+            function goToMenu2() {location.href = "moblie04.html"; 
+            }
+            function goToMenu3() {location.href = "moblie05.html"; 
+            }
+
+    </script>
+
+
+
+
+</head>
+<body>
+  <div>
+    <div class="title">
+      <img class="homeBtn" src="./images/house.png" width="40px" height="40px"
+      onclick="goToHomepage()" style="cursor:pointer"
+      > LIST
+      <img class="menuBtn" src="./images/menu.png" 
+      onclick="goToMenu()" style="cursor: pointer;" > 
+    </div>
+    <div class="contents">
+    <br><br><br><h1>CONTENTS</h1>
+    </div>
+    <div>
+        <div class="contents_1" onclick="goToMenu1()"> 1. ABOUT ME</div>
+        <div class="contents_2" onclick="goToMenu2()"> 2. WHY LEARN</div>
+        <div class="contents_3" onclick="goToMenu3()"> 3. PLAN</div>
+    </div>
+
+  </div>
+
+
+
+</body>
+ 

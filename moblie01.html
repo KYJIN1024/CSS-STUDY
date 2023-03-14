@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+    <style>
+        .banner_title{
+          font-size: 15px;
+          font-weight: bold;
+          text-align: center;
+          padding-top:20px;
+        }
+        .title{
+          font-size: 20px;
+          height: 50px;
+          background-color: #4473C2;
+          color: white;
+          text-align: center;
+          margin-top: 20px;
+          padding-top: 20px;
+          
+        }
+        .homeBtn{
+          position: absolute;
+          left: 30px;  
+          top:85px;
+        }
+        
+        .homeBtn:hover{
+          background: white;
+        }
+
+        .menuBtn{
+          position: absolute;
+          right: 30px;
+          top: 85px;
+          width: 40px;
+          height: 40px;
+        }
+
+        .menuBtn:hover{
+          background: white;
+        }
+
+        .contents{
+          font-size: 30px;
+        }
+
+    </style>
+
+    <script>
+        function goToHomepage() { location.href = "moblie01.html"; 
+        }
+        function goToMenu() {location.href = "moblie02.html"; 
+        }
+
+
+    </script>
+</head>
+<body>
+  <div class="banner_title">
+    조경진의 자기소개 홈페이지
+    <div class="title">
+      <img class="homeBtn" src="./images/house.png" width="40px" height="40px"
+      onclick="goToHomepage()" style="cursor:pointer"
+      > HOME
+      <img class="menuBtn" src="./images/menu.png" onclick="goToMenu()" style="cursor: pointer;" > 
+    </div>
+    <div class="contents">
+      <br>
+      <h1>Welcome to <br> KJ's Homepage</h1>
+      <div>
+        <img  class="silde_item item1" src="./images/intro.jpg" width="300px" >
+      </div>
+    </div>
+  </div>
+
+
+
+
+</body>
+ 

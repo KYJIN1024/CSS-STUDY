@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+    <style>
+        .title{
+          font-size: 25px;
+          height: 50px;
+          background-color: #4473C2;
+          color: white;
+          text-align: center;
+          margin-top: 5px;
+          padding-top: 20px;
+          
+        }
+
+        .homeBtn{
+          position: absolute;
+          left: 30px;  
+          top:30px;
+        }
+
+        .menuBtn{
+          position: absolute;
+          right: 30px;
+          top: 30px;
+          width: 40px;
+          height: 40px;
+        }
+
+        .contents{ 
+          font-size: 24px;
+          margin:5px;
+          text-align: center;
+        }
+
+        .contents_1{
+          border: 1px solid ;
+          border-radius: 8px;
+          width: 70%;
+          height: 50px;
+          margin: 50px;
+          font-size: 30px;
+          font-weight: bold;
+          background-color: #F8CBAC;
+        }
+        .contents_2{
+          border: 1px solid ;
+          border-radius: 8px;
+          width: 70%;
+          height: 50px;
+          margin: 50px;
+          font-size: 30px;
+          font-weight: bold;
+          background-color: #C5E0B5;
+        }
+        .contents_3{
+          border: 1px solid ;
+          border-radius: 8px;
+          width: 70%;
+          height: 50px;
+          margin: 50px;
+          font-size: 30px;
+          font-weight: bold;
+          background-color: #F2E5C0;
+        }
+        table{
+          width : 50%;
+          height : 200;
+          width: 90%;
+          padding: 5px;
+          margin-left: 20px;
+          font-size: 20px;
+        }
+        tr{
+          border : 1px solid;
+          text-align: left;
+          background-color: white;
+        }
+        td{
+          
+          border: 1px solid;
+        }
+
+        a:link {
+            color: #ff0000;
+        }
+        a:visited{
+            color:#00ff00;
+        }
+        a:hover {
+            color:#ff00ff;
+        }
+        a:active{
+            color:#0000ff;
+        }
+
+        .homeBtn:hover{
+          background: white;
+        }
+        .menuBtn:hover{
+          background: white;
+        }
+
+    </style>
+
+    <script>
+       function goToHomepage() { location.href = "moblie01.html"; 
+        }
+        function goToMenu() {location.href = "moblie02.html"; 
+        }
+    </script>
+</head>
+<body>
+  <div>
+    <div class="title">
+      <img class="homeBtn" src="./images/house.png" width="40px" height="40px"
+      onclick="goToHomepage()" style="cursor:pointer"> INTRODUCE
+      <img class="menuBtn" src="./images/menu.png"  onclick="goToMenu()" style="cursor: pointer;" > 
+    </div>
+    <br><br>
+    <div class="contents">
+      <img src="./images/face.png" width="120px" height="150px">
+    <br><br><br>
+    </div>
+    <div>
+        <table>
+            <tr >
+              <td bgcolor="#DAE3F4">이름</td>
+              <td bgcolor="#DAE3F4">조경진</td>
+            </tr>
+            <tr>
+              <td>영문이름</td>
+              <td>DAVID</td>
+            </tr>
+            <tr>
+              <td bgcolor="#DAE3F4">성별</td>
+              <td bgcolor="#DAE3F4">남</td>
+            </tr>
+            <tr>
+              <td>연락처</td>
+              <td>010-7583-7320</td>
+            </tr>
+            <tr>
+              <td bgcolor="#DAE3F4">거주지</td>
+              <td bgcolor="#DAE3F4">인천</td>
+            </tr>
+            <tr>
+              <td>취미</td>
+              <td>코딩</td>
+            </tr>
+            <tr>
+              <td bgcolor="#DAE3F4">특기</td>
+              <td bgcolor="#DAE3F4">코딩</td>
+            </tr>
+            <tr>
+              <td>평소주로하는일</td>
+              <td>코딩</td>
+            </tr>
+            <tr>
+              <td bgcolor="#DAE3F4">GITHUB</td>
+              <td bgcolor="#DAE3F4"><a href="https://github.com/KYJIN1024" 
+              target="child">바로가기</a></td>
+            </tr>
+            <tr>
+              <td>블로그</td>
+              <td><a href="https://ticculcoding.blogspot.com/" 
+              target="child">바로가기</a></td>
+            </tr>
+          
+        </table>
+    </div>
+
+  </div>
+
+
+
+</body>
+ 
